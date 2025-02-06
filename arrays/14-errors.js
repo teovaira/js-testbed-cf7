@@ -5,14 +5,15 @@ function insert(arr, product) {
 
   try {
     if (arr.includes(product)) {
-      throw new error('Product exists')
+      throw new Error("Product exists")
     }
     products.push(product)
-  } catch (error ) {
+  } catch (error) {
     console.error(error.message, error.trace)
     throw error
   }
 }
+
 
 try {
   insert(products, 'apples')
